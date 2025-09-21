@@ -11,6 +11,7 @@ cycler==0.12.1
 debugpy==1.8.12
 decorator==5.1.1
 distlib==0.3.9
+dj-database-url==3.0.1
 Django==5.2.5
 executing==2.2.0
 filelock==3.16.1
@@ -35,6 +36,7 @@ pipenv==2024.4.0
 platformdirs==4.3.6
 prompt_toolkit==3.0.50
 psutil==6.1.1
+psycopg2-binary==2.9.10
 pure_eval==0.2.3
 pycryptodome==3.22.0
 Pygments==2.19.1

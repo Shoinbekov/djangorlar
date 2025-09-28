@@ -17,8 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core.views import index
+from  . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
+    path('', views.welcome_page, name='welcome'),
+    path('users/', views.users_list, name='users'),
+    path('city-time/', views.city_time, name='city-time'),
+    path('cnt/', views.conter, name='counter'),
+    path('cnt/reset/', views.reset_counter, name='reset_counter'),
 ]

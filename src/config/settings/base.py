@@ -1,6 +1,7 @@
 from pathlib import Path
 from decouple import config, Csv
 import dj_database_url  # <— добавили
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 
@@ -70,3 +71,10 @@ USE_I18N = True
 USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DJANGO_ENV_ID = os.environ.get('DJANGO_ENV_ID')
+
+if DJANGO_ENV_ID == 'local':
+    DEBUG = True
+else: 
+    DEBUG = False

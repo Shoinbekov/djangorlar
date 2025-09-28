@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-secale=1.0" />
+    <title>Time in cities</title>
+  </head>
+  <body>
+    <h1>Current time in different cities</h1>
+    <a href="/">Back</a.>
+
+    <ul>
+        {% for city, time in city_time.items %}
+        <li><strong>{{ city }}</strong>: {{ time }}</li>
+        {% endfor %}
+    </ul>
+  </body>
+</html>
